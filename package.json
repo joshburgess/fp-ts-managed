@@ -1,6 +1,6 @@
 {
   "name": "fp-ts-managed",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A partial port of Haskell-Managed-Library for fp-ts",
   "files": [
     "lib"

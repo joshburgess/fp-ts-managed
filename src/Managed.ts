@@ -113,11 +113,16 @@ export const with_: <R, A>(
  */
 export const unManaged = with_
 
+/**
+ * @since 0.0.1
+ */
 export const runManaged = <A>(ma: Managed<void, A>): IO<void> =>
   iso<Managed<void, A>>().unwrap(ma)(io.of)
 
+// utlity type alias used below
 type Curried2<A, B, C> = (a: A) => (b: B) => C
 
+// utility function used below
 function liftA2<F extends URIS3>(
   F: Apply3<F>,
 ): <A, B, C>(

@@ -203,6 +203,8 @@ Added in v0.0.1
 export const runManaged = <A>(ma: Managed<void, A>): IO<void> => ...
 ```
 
+Added in v0.0.1
+
 # with\_ (function)
 
 **Signature**
